@@ -1,0 +1,12 @@
+name: jenkins
+
+services:
+  web:
+    image: nginx
+    build: ./
+    container_name: mon-serveur-nginx
+
+    ports:
+      - 8080:80
+
+    
